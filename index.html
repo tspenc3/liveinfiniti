@@ -12,7 +12,7 @@
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -23,6 +23,28 @@
   </head>
 
   <style>
+
+    /* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
     /* grouped CSS) */
 
     #yellowFont{
@@ -180,7 +202,7 @@
                   padding-left:-50px;
                 }
 
-            
+      
     #container6{
       background-color: rgba(255,255,255,255);
     }
@@ -234,13 +256,13 @@
 
       <div class="row">
 
-        <div class="col-lg-2 col-md-2 col-sm-2" id="container1Left">
+        <div class="col-2" id="container1Left">
 
           <!-- <h3>Live Infiniti Global</h3> -->
           
         </div>
 
-        <div class="col-lg-8" id="container1nav">
+        <div class="col-8" id="container1nav">
 
             <nav class="nav justify-content-center">
                 
@@ -253,7 +275,7 @@
 
         </div>
 
-        <div class="col-lg-2" id="container1Right">
+        <div class="col-2" id="container1Right">
             <nav class="nav justify-content-center">
                 
                 <a class="nav-link" href="#container7">Contact Us</a>
