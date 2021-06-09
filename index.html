@@ -1,481 +1,541 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <script src="https://kit.fontawesome.com/b5c315d285.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Serif&display=swap" rel="stylesheet">
+<!doctype html>
+<html lang="en">
+  <head>
 
-        <title>luNAR Inc.</title>
-        <style>
+    <!-- Needed for fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
-            html{
-                /* this makes the scrolling more smooth */
-                scroll-behavior: smooth;
-            }
-            body{
-                background-color: #f8f8f8;
-            }
-            .jumbotron{
-                background: url('file:///Users/tspence/Desktop/luNAR%20inc%20site/luNARPics/luNARLogo.jpg');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                height: 100vh;
-            }
+    <!-- script needed for icons from awesome fonts .com / must input script src in head tags -->
+    <script src="https://kit.fontawesome.com/b5c315d285.js" crossorigin="anonymous"></script>
+        
 
-            #logoID{
-                width: 100px;
-                margin-left: 70px;
-            }
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-            .dropdown-menu{
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    
+    <title>Infiniti Global: Residential Care</title>
+    
+  </head>
+
+  <style>
+    /* grouped CSS) */
+
+    #yellowFont{
+      color: #feba55;
+    }
+
+    #oliveFont{
+      color: #8d8a3a;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .circle-icon {
+      
+      padding: 25px;
+      border-radius: 50%;
+      border-width: 1px;
+      background-color: #485679e3;
+    
+    }
+
+    .circle-icon2{
+      padding: 25px;
+      border-radius: 50%;
+      border-width: 1px;
+      background-color: #485679e3;
+    }
+
+    .alert{
+    display: none;
+    }
+
+    .smallTextFont{
+      font-family: 'Chivo', sans-serif;
+
+    }
+
+    /* container css */
+
+    #container1{
+
+      /*margin-left: 0px;
+      margin-right: 0px; 
+      padding-top: 50px;
+      padding-right: 50px;
+      padding-left: 50px;
+      padding-bottom: 50px;*/
+      background-color: rgba(53,65,89,255);
+    }
+          .nav{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+          }
+          
+          .nav-link:link, .nav-link:visited{
+            color: #feba55;
+          }
+
+          .nav-link:active, .nav-link:hover{
+            color: rgba(255,255,255,255); 
+          }
+
+    #container2{
+      
+
+        background-image: url('https://i0.wp.com/bestlifeonline.com/wp-content/uploads/2019/12/happy-senior-couple-outdoors.jpg?resize=1024%2C683&ssl=1');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+          #container2Text{
+            text-align: center;
+            padding-top: 268px;
+            color: rgba(53,65,89,255);
+            
+          }
+
+          #container2Btn1{
+            color: black;
+            border: 1px solid rgba(255,255,255,255);
+          }
+
+          #container2Header{
+            font-family: 'Playfair Display', serif;
+          }
+
+          
+    #container3{
+      background-color: rgba(246,239,231,255);
+    }
+          
+
+          #container3Left{
+            margin: auto;
+            width: 50%;
+            padding-left: 50px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+          }
+
+          #container3Right{
+            margin: auto;
+            width: 50%;
+            padding-right: 140px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left:-50px;
+          }
+
+    #container4{
+      background-color: rgba(46,56,81,255);
+      text-align: center;
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+
+          #container4Header{
+            
+            padding-bottom: 30px;
+            font-family: 'Playfair Display', serif;
+            
+          }
+
+          #container4SubHeader{
+            color: #e8debb;
+            font-family: 'Playfair Display', serif;
+            
+          }
+
+          #container4Text{
+            color: #dae0e2; 
+            font-family: 'Chivo', sans-serif;
+
+          }
+
+    #container5{
+      background-color: rgba(246,239,231,255);
+    }
+
+          #container5Left{
+                  margin: auto;
+                  width: 50%;
+                  padding-left:140px;
+                  padding-top: 50px;
+                  padding-bottom: 50px;
+                }
+
+            #container5Right{
+                  margin: auto;
+                  width: 50%;
+                  padding-right: 50px;
+                  padding-top: 50px;
+                  padding-bottom: 50px;
+                  padding-left:-50px;
+                }
+
+            
+    #container6{
+      background-color: rgba(255,255,255,255);
+    }
+    #container7{
+      background-color: rgba(53,65,89,255);
+      padding-top: 40px;
+      padding-bottom: 20px;
+      text-align: center;
+      
+    }
+          #container7Header{
+            
+            padding-bottom: 30px;
+            font-family: 'Playfair Display', serif;
+            
+          }
+
+          #container7SubHeader{
+            
+            font-family: 'Playfair Display', serif;
+            
+          }
+
+          #container7Text{
+            color: #dae0e2; 
+            font-family: 'Chivo', sans-serif;
+
+          }
+
+    #container8{
+      background-color: #242e47;
+      padding: 30px;
+      padding-bottom: 5px;
+      padding-top: 44px;
+      
+      font-size: 10px;
+      
+    }
+          #homeBtn{
+                text-align: right;
+                font-size: 12px;
                 padding-top: 15px;
-                font-family: 'Montserrat', sans-serif;
-                
-            }
-
-            .dropdown-item{
-                color: #b76e79;
-            }
-
-            a:link, a:visited, a:hover, a:active{
-                color: #b76e79;
-            }
-
-
-            .button{
-                font-family: 'Montserrat', sans-serif;
-            }
-
-            #whiteButton{
-                color: #ffffff;
-                border: 1px solid #ffffff;
-            }
-
-            #grayButton{
-                color: #b76e79;
-                border: 1px solid #b76e79;
-                background-color: #ffffff;
-            }
-
-            #heading{
-                font-family: 'PT Serif', serif; 
-                font-size: 100px;
-                margin-right: 8px;
-                color: #ffffff;
-            }
-
-            #ourWorkSection{
-                margin: auto;
-                width: 50%;
-                padding: 10px;
-            }
-
-            .whiteCard{
-                text-align: center;
-                background-color:white;
-                padding: 15px;
-                
-            }
-
-
-            .whiteCard p{
-                color: #aeaeae;
-            }
-
-            .cardIcons{
-                color: #aeaeae;
-            }
-
-            #firstWhiteDiv{
-                background-color: #f8f8f8;
-                margin-left: 0px;
-                margin-right: 0px; 
-            }
-
-            #threeSectionDiv{
-                background-color: #f8f8f8;
-                margin-left: 0px;
-                margin-right: 0px; 
-                padding-right: 50px;
-                padding-left: 50px;
-                padding-bottom: 50px;
-            }
-
-            #threeSectionDiv h2{
-                color: #212529;
-                font-family: 'Montserrat', sans-serif;
-                font-size: 28px;
-            }
-
-            .image{
-                display: block;
-                width: 100%;
-                height: 77.5%;
-            }
-
-            .imageTwo{
-                position: relative;
-            }
-
-            #teamPictureDiv{
-                padding: 20px;
-                text-align: center;
-                
-            }
-
-            .no-gutters{
-                margin-right: 0;
-                margin-left: 0;
-            }
-
-            #contactUs{
-                text-align: center;
-            }
-            #contactUsDiv{
-                padding: 50px;
-                margin-right: 0px;
-                background-color: #eeeeee;
-            }
-
-            .form-group{
-                width: 67%;
-                margin-left: 16%; 
-                border: 1px solid #f2f2f2;
-                color: #b76e79;
-                box-shadow: none;
-                font-size: 14px;
-            }
-
-            #msgButton{
-                background-color: #ffffff;
-                margin-left: 44%; 
-                color: #b76e79;
-                border: 1px solid #b76e79;
-                font-family: 'Mukta Mahee', sans-serif;
-                font-size: 18px;
-                padding: 8px 20px;
-
-            }
-
-            #Message{
-                height: 130px;
-                text-align: left;
-                padding-bottom: 100px;
-            }
-
-            .footer{
-                background-color:#757575;
-                color: #ffffff;
-                padding: 30px;
-                text-align: center;
-            }
-            #footerArrow{
-                color: #b76e79;
-                text-decoration: none;
-            }
-
-            .fab{
-                padding: 4px;
-                color: #aeaeae;
-
-            }
-
-            .far{
-                padding: 4px;
-                color: #aeaeae;
-
-            }
-
-            .fas{
-                padding: 4px;
-                color: #aeaeae;
-
-            }
-            
-            #footerSection{
-                color: #ffffff;
-                font-family: 'Montserrat', sans-serif;
-            }
-
-            #footerSection span{
-                color: #b76e79;
-            }
-
-            #footerSection h2{
-                margin-top: 19%;
-                margin-bottom: 10%;
-            }
-
-            #footerSection h6{
-                text-transform: uppercase;
-            }
-            
-        </style>
+                font-family: 'Playfair Display', serif;
+              }
     
-    </head>
-    <body>
-        <div class="jumbotron" id="jumboTron">
+    
+  </style>
 
-            <div class="row">
-                <div class="col-lg-2">
-                   <!-- <img width="100%" id="logoID" src="luNARPics/luNARLogo.jpg" /> -->
-                </div>
+  <body>
+    <div class="container-fluid" id="container1">
 
-                <div class="col-lg-8">
-                    
-                    <!--<nav class="nav justify-content-center">
-                        <a class="nav-link" href="#jumboTron">HOME</a>
-                        <a class="nav-link" href="#products">luNAR CHARGERS</a>
-                        <a class="nav-link" href="#teamPictureDiv">OUR TEAM</a>
-                        <a class="nav-link" href="#contactUs">CONTACT US</a>
-                    </nav>-->
-                </div>
+      <div class="row">
 
-                <div class="col-lg-2">
-                        <ul class="nav nav-tabs">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="jumboTron" role="button" aria-haspopup="true" aria-expanded="false">HOME</a> 
-                                    <div class="dropdown-menu">
-                                        
-                                        <a class="dropdown-item" href="#products">luNAR CHARGERS</a>
-                                        <a class="dropdown-item" href="#teamPictureDiv">OUR TEAM</a>
-                                        <a class="dropdown-item" href="#contactUs">CONTACT US</a>
-                                    </div>
-                            </li>
-                        </ul>
+        <div class="col-lg-2" id="container1Left">
 
-                </div>
-            </div>    
-
-
-            <div class="row">
-                <div class="col-lg-12 text-center" id="headerText">
-                    <!--<p style="font-family: 'Montserrat', sans-serif; font-size: 18px; color: #ffffff;">"The advance of technology is based on making it fit in so that you don't really even notice it, <br>so it's part of everyday life.”
-                        Bill Gates</p>
-                    <h1 id="heading">Your luNAR <br></h1>
-                    <p style="font-family: 'Montserrat', sans-serif; font-size: 20px; color: #ffffff;">We strive for excellence. <br>We work with what we believe in.</p>
-                    <button type="button" class="btn btn-outline-secondary" id="whiteButton">Get in Touch</button>-->
-                </div>
-                        
-            </div>
-        </div>       
-    <div class="section">
-        <div class="container" id="products">
-            <div class="row" id="firstWhiteDiv">
-                <div class="col-lg-5" id="ourWorkSection">
-                    <h1 style="font-family: 'Montserrat', sans-serif; font-size: 32px; color: #b76e79;">luNAR CHARGERS</h1>
-                    <p style="font-family: 'Montserrat', sans-serif; font-size: 16px; color: #aeaeae;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis congue elementum.</p>
-                    
-                    <button type="button" class="btn btn-outline-secondary" id="grayButton">Experience luNAR</button>
-
-                </div>
-
-                <div class="col-lg-7">
-
-                    <img width="100%" src="https://d3sgyrafn929g0.cloudfront.net/wp-content/uploads/sites/27/2017/02/22075751/iphoneimg.png" />
-                        
-                </div>
-            </div>
+          <!-- <h3>Live Infiniti Global</h3> -->
+          
         </div>
+
+        <div class="col-lg-8" id="container1nav">
+
+            <nav class="nav justify-content-center">
+                
+                <a class="nav-link" href="#container3">About</a>
+                <a class="nav-link" href="#container4">Services</a>
+                <a class="nav-link" href="#container5">Resources</a>
+                <a class="nav-link" href="#container6">Location</a>
+                
+            </nav>
+
+        </div>
+
+        <div class="col-lg-2" id="container1Right">
+            <nav class="nav justify-content-center">
+                
+                <a class="nav-link" href="#container7">Contact Us</a>
+            
+        </div>
+
+      </div>
+
     </div>
-    <section>
-        <div class="container">
-            <div class="row" id="threeSectionDiv">
-                <div class="col-lg-4">
-                    <div class="whiteCard">
-                        <i class="far fa-sun fa-3x cardIcons"></i>
-                        
-                        <h2 style="color: #b76e79;">Renewable Energy</h2>
-                        <br>
-                        <span style="color: #aeaeae;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis congue elementum.</span>
-                    </div>
-                </div>
 
-                <div class="col-lg-4">
-                    <div class="whiteCard">
-                        <i class="fas fa-mobile-alt fa-3x cardIcons"></i>
-                        
-                        <h2 style="color: #b76e79;">Portable</h2>
-                        <br>
-                        <span style="color: #aeaeae;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis congue elementum.</span>
-                    </div>
-                </div>
+    <div class="container-fluid" id="container2">
 
-                <div class="col-lg-4">
-                    <div class="whiteCard">
-                        <i class="fas fa-wifi fa-3x cardIcons"></i>
-                        
-                        <h2 style="color: #b76e79;">Indirect Charging</h2>
-                        <br>
-                        <span style="color: #aeaeae;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis congue elementum.</span>
-                    </div>
-                </div>
+      <div class="row">
+  
+        <div class="col-lg-5" id="container2Text">
 
-            </div>
+            <!-- this outlines the text -->
+          <h2 id="container2Header" style="-webkit-text-stroke: 1px rgba(53,65,89,255)">Infiniti Global: Residential Care</h2>
+          <h4 class="smallTextFont" style="-webkit-text-stroke: 1px rgba(53,65,89,255)">Secondary statement goes here</h4>
+
+          <br>
+
+          
+          <div id="covidAlert" class="alert alert-info fade show alert-dismissible" role="alert" style="display:none">
+              <button type="button" class="btn btn-light close" id="container2Btn1"><span aria-hidden="true">&times;</span></button>
+              <div id="covidAlertDetails"></div>
+          </div>
+
+          <button type="button" id="getcovidAlert" class="btn btn-light ">COVID-19 Update</button>
+                
+        </div>
+
+        <div class="col-lg-7">
 
         </div>
-    </section>
-    <section>
-        <div class="container" id="products">
-            
-            <div class="row no-gutters" id="pictureDiv">
+          
+      </div>
+  
+    </div>
 
-                <div class="col-lg-6">
-                    <img width="100%" class="image imageTwo" src="https://brightworkscharging.com/wp-content/uploads/2016/09/WIRELESS-PHONE-CHARGING-ADAPTER-1000X1000.jpg" />
-                    
-                </div>
+    <div class="container-fluid" id="container3">
 
-                <div class="col-lg-6">
-                    <img width="100%" class="image imageTwo" src="https://i.pinimg.com/originals/9d/56/64/9d56641acad84e8bfffae4ebcf2fb74b.jpg" />
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-        <div class="section">
-            <div class="container" id="teamPictureDiv">
-                <div class="row">
-
-                    <div class="col-lg-12">
-            
-                        <h2 style="font-family: 'Montserrat', sans-serif; font-size: 32px; color: #b76e79;">OUR TEAM</h2>
-                                   
-                    </div>
-                </div>
-                <br>
-
-                <div class="row">
-                    <div class="col-lg-4">
-
-                        <!--<img width="100%" class="image" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/82536870_10103589030990244_6317172309958328320_n.jpg?_nc_cat=105&_nc_sid=8bfeb9&_nc_ohc=W9KrKyiE0UYAX-bvJj6&_nc_ht=scontent-dfw5-1.xx&oh=bcf6599231ad6c569b5596e200711c0a&oe=5F70A8A1" />-->
-                        
-                        <span>Jessica D. Bailey</span>
-                        <br>
-                        <span style="color: #aeaeae;">Co - Founder</span>
-                        <br><br>
-                        <p>Jessica Bailey received her master’s in Business Administration from Schiller international University in 2011. She also has her Masters in Science of Nursing from Grand Canyon University and Bachelors in Psychology from Indiana State University. Her entrepreneur essence has nursed numerous startup enterprises. She also consults and advises business owners on personal and professional growth. Jessica has 8 years of nursing experience, given her the insight to the needs and wants of a many diverse demographics. Although her main passion is cultivating startups, on her spare time she enjoys cooking for her family, volunteering medical assistance to the community, and creating holistic pathways for healing. Being a student of life has afforded her the ability to always lend a helping hand to others who cannot help themselves, weather in innovations, life, or business.</p>
-                        
-                    </div>
-
-                    <div class="col-lg-4">
-
-                        <!--<img width="100%" class="image" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/375257_276988862348244_1286009617_n.jpg?_nc_cat=110&_nc_sid=09cbfe&_nc_ohc=kqA70UK9xLcAX8U2E9d&_nc_ht=scontent-dfw5-1.xx&oh=cbab3f7f6844849b3619410097ff7481&oe=5F71CC79" />-->
-                        
-                        <span>Tiffany T. Spencer</span>
-                        <br>
-                        <span style="color: #aeaeae;">Co - Founder</span>
-                        <br><br>
-                        <p>Tiffany Spencer received her Bachelor of Science degree in Retail Management from The Art
-                            Institute of Houston. She also had additional coursework in graphic design as well as Business
-                            Administration and International Business from University of Houston and Houston Baptist
-                            University. She is organized and detail-oriented by nature, an artist by habit and creative by
-                            chance. Tiffany enjoys drawing, math, numbers, puzzles and trivia, getting lost in a good book,
-                            eating Reese’s Peanut Butter Cups and watching football. Tiffany’s creative and analytical
-                            background is the core of luNAR’s mission to make charging your mobile devices non-restricting
-                            and convenient.</p>
-                        
-
-                    </div>
-
-                    <div class="col-lg-4">
-
-                        <!--<img width="100%" class="image" id="imageTres" src="luNARPics/Telissa.jpg" />-->
-                        
-                        <span>Telissa T. Spencer</span>
-                        <br>
-                        <span style="color: #aeaeae;">Co - Founder</span>
-                        <br><br>
-                        <p>Telissa Spencer received her bachelor’s of science degree in kinesiology from the university of texas at austin. During her time at university, she was introduced to the core necessities of business functions in the modern world and as a result received a certificate in business foundations. telissa has a strong passion for movement without confinement and therefore will often find her in the gym or learning how to create the best health for her and her body. given this proclivity, she fits perfectly into luNAR Inc’s mission to remove the confines of modern day charging in order to provide a limitless means of technological powering capabilities.
-                        </p>
-                        
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <section id="contactUs">
-                <div class="row">
-                    <div class="col-lg-12">
-                            <h2 style="font-family: 'Montserrat', sans-serif; font-size: 32px; color: #b76e79;">CONTACT US</h2>
-                            <br>
-                            <div id="mapDiv">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d222140.85790439276!2d-95.47460426968077!3d29.546924029292317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86405890a6fe33a9%3A0xcabb7507f4a5ccee!2sPearland%2C%20TX!5e0!3m2!1sen!2sus!4v1598718887236!5m2!1sen!2sus" 
-                            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <br>
-            
+      <div class="row" id="container3Row">
     
-            <section>
-                
-                
-                    <div class="row" id="contactUsDiv">
-                        <div class="col-lg-12 blackMukta">
+        <div class="col-lg-6" id="container3Left">
+          
+          <img width="100%" src="https://i.pinimg.com/originals/d9/b9/76/d9b976ca71c813eb172d5cde794ddb5c.jpg"/>
+
+        </div>
+
+        <div class="col-lg-6" id="container3Right">
+          
+          <h1 id="oliveFont"><i>Large Text Goes Here</i></h1>
+          <br><br>
+          <p class="smallTextFont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis congue elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis congue elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis congue elementum.</p>
+
+        </div>
+            
+      </div>
+    
+    </div>
+
+    <div class="container-fluid" id="container4">
+
+      <div class="row" id="yellowFont">
+
+        <div class="col-lg-12">
+          <h1 id="container4Header">Header Goes Here</h1>
+        </div>
+
+      </div>
+
+      <div class="row" id="yellowFont">
+      
+        <div class="col-lg-3">
+          
+            <i class="fas fa-wheelchair fa-3x fa-border circle-icon"></i>
+            <br><br>
+            <h4 id="container4SubHeader">service #1</h4>
+            <span id="container4Text" class="smallTextFont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis congue elementum. </span>
+          
+        </div>
+
+        <div class="col-lg-3">
+
+            <i class="fas fa-heart fa-3x fa-border circle-icon"></i>
+            <br><br>
+            <h4 id="container4SubHeader">service #2</h4>
+            <span id="container4Text" class="smallTextFont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis congue elementum. </span>
+
+        </div>
+
+        <div class="col-lg-3">
+            
+            <i class="fas fa-first-aid fa-3x fa-border circle-icon"></i>
+            <br><br>
+            <h4 id="container4SubHeader">service #3</h4>
+            <span id="container4Text" class="smallTextFont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis congue elementum. </span>
+
+        </div>
+
+        <div class="col-lg-3">
+          
+            <i class="fas fa-building fa-3x fa-border circle-icon"></i>
+            <br><br>
+            <h4 id="container4SubHeader">serivce #4</h4>
+            <span id="container4Text" class="smallTextFont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis congue elementum. </span>
+
+        </div>
+              
+      </div>
+      
+    </div>
+
+    <div class="container-fluid" id="container5">
+
+        <div class="row" id="container5Row">
+    
+            <div class="col-lg-6" id="container5Left">
+
+                <h1 id="oliveFont"><i>Large Text Goes Here</i></h1>
+                <br><br>
+                <p class="smallTextFont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis congue elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis congue elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis congue elementum.</p>
+      
+            </div>
+    
+            <div class="col-lg-6" id="container5Right">
+              
+              <!-- this section creates a slideshow of images -->
+                <div class="row">
+                    <div id="carouselThreePics" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active" data-interval="6000">
+                                <!--7000ms = 7s; time until next image slides over-->
+                                <img src="https://media.istockphoto.com/photos/playful-seniors-picture-id182175373?k=6&m=182175373&s=612x612&w=0&h=xhskdTbh55KeiEfDHg2azOpAeCRXr3y-IZY3wWWHva8=" class="d-block w-100" alt="happy elderly">
+                            </div>
                             
-                            <form>
-                                <!-- this section creates a list of forms for user input -->
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="yourNameInput" placeholder="Your Name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="yourEmailInput" placeholder="Your Email">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="Subject" placeholder="Subject">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="Message" placeholder="Message">
-                                </div>
-                                <div id="buttonDiv">
-                                    <button type="button" class="btn btn-outline-secondary" id="msgButton">Send Message</button>
-                                </div>
-                            </form>
+                            <div class="carousel-item" data-interval="6000">
+                                <img src="https://www.seniorhousingnet.com/app/uploads/2020/08/What_Is_Assisted_Living-1024x683.jpg" class="d-block w-100" alt="elderly group">
+                            </div>
+
+                            <div class="carousel-item" data-interval="6000">
+                                <img src="https://www.seniorhousingnet.com/app/uploads/2020/08/How_Do_I_Choose_Assisted_Living-1024x683.jpg" class="d-block w-100" alt="elderly group experience happy">
+                            </div>
+                            
+                            <div class="carousel-item" data-interval="6000">
+                                <img src="https://images.theconversation.com/files/333513/original/file-20200507-49573-5nxppq.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&fit=clip" class="d-block w-100" alt="caregiver and senior patient">
+                            </div>
+
+                        </div>
+                        <div>
+                            <a class="carousel-control-prev" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon carouselButton" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+
+                            <a class="carousel-control-next" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon carouselButton" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
                         </div>
                     </div>
-               
-            </section>
-
-        <div class="footer">
-           <div class="container-fluid">
-            <div class="row" id="footerSection">
-
-                <div class="col-lg-12">
-                   
-                        <a href="#jumboTron">
-                            <i id="footerArrow" class="fas fa-angle-up fa-5x" style="display: inline;"></i>
-                        </a>
-                        <br><br>
-                        
-        
-                        <span style="color: white;">© luNAR Inc, LLC. All Rights Reserved.</span>
-                    
-                        <br>
-                        <span style="color: white;">Designed by BootStrapMade</span>
-                    <br>
-                    <br>
-        
-                        <!-- these are icons from awesome fonts .com / must input script src in head tags -->
-                        <i class="fab fa-facebook fa-1x"> </i>
-                        <i class="fab fa-twitter fa-1x"> </i>
-                        <i class="fab fa-instagram fa-1x"> </i>
-                        <i class="fas fa-basketball-ball fa-1x"> </i>
-                        <i class="fab fa-skype fa-1x"> </i>
-                    </div>
-
+                </div>
             </div>
-           </div>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
-    <script>
+         </div>
+      </div>
 
+    <div class="container-fluid" id="container6">
+
+       <div class="row">
+        
+        <div class="col-lg-12">
+            <div id="mapDiv">
+                <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=2401%20Fountain%20View%20Dr.%20ste%20224+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
+                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+                
+      </div>
+        
+    </div>
+
+    <div class="container-fluid" id="container7">
+
+      <div class="row" id="yellowFont">
+
+        <div class="col-lg-12">
+          <h1 id="container7Header">Get in Touch</h1>
+        </div>
+    
+      </div>
+
+      <div class="row" id="yellowFont">
+      
+        <div class="col-lg-4">
+
+          <i class="fas fa-map-marker-alt fa-3x fa-border circle-icon2"></i>
+          <br><br>
+          <h4 id="container7SubHeader">Phone</h4>
+
+          <span id="container7Text">
+              (832) 400 - 2242
+          </span>
+
+        </div>
+
+        <div class="col-lg-4">
+
+          <i class="fas fa-phone fa-3x fa-border circle-icon2"></i>
+          <br><br>
+
+          <h4 id="container7SubHeader">Address</h4>
+          <span id="container7Text">
+            
+              2401 Fountain View Dr. Ste 224 #2192
+            <br>
+              Houston, TX 77057
+
+          </span>
+
+        </div>
+
+        <div class="col-lg-4">
+
+          <i class="fas fa-envelope fa-3x fa-border circle-icon2"></i>
+          <br><br>
+          <h4 id="container7SubHeader">Email</h4>
+
+          <span id="container7Text"> 
+            contact@liveinfinitiglobal.com
+          </span>
+
+        </div>
+                
+      </div>
+        
+    </div>
+
+    <div class="container-fluid" id="container8">
+
+        <div class="row" id="yellowFont">
+        
+          <div class="col-lg-6">
+            <p>© 2021 Infiniti Global: Residential Care</p>
+            <p>All Rights Reserved.</p>
+          </div>
+
+          <div class="col-lg-6">
+              <a class="nav-link" href="#container1" id="homeBtn">Home</a>
+          </div>
+                  
+        </div>
+          
+    </div>
+   
+
+        
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <script>
+      
+      let values = 'In our continuing efforts to ensure the health and safety of our employees, patients and our community, Infiniti Global: Residential Care has implemented safety procedures and protocols as recommended by the CDC. <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/nursing-home-long-term-care.html" target="self">Click Here to Learn More</a>';
+
+        $('#container2Btn1').on('click', function() {
+          $("#covidAlert").hide();  
+        });
+
+        $('#getcovidAlert').on('click', function() {
+          $("#covidAlertDetails").html('<b>COVID-19 Information</b>: '+values);
+          $("#covidAlert").show();
+        });
+    
     </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
 </html>
-<!-- vertical placement for home tabs bars; right hand placement -->
